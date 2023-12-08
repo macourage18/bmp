@@ -1,6 +1,9 @@
 import './App.css';
 import { Home } from "./pages/Home"
-import { Contact } from "../src/"
+import { Contact } from "./pages/Contact"
+import { About } from "./pages/About"
+import { Service } from "./pages/Service" 
+import { Navbar } from "./pages/Navbar"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
