@@ -6,30 +6,3 @@
   box-sizing: border-box;
 }
 
-.navbar{
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 5px 0 5px 5px lightgray ;
-
-  position: fixed;
-  top: 0;
-  padding: 0 10%;
-}
-
-.logo img{
-  width: 100px;
-}
-
-.mid{
-  display: flex;
-  padding: 20px;
-}
-
-.mid a{
-  text-decoration: none;
-}
-.btn1{
-  border: solid 2px rgb(68, 160, 245)
-}

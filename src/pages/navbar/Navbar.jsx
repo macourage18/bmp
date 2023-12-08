@@ -2,12 +2,13 @@ import "./nav.css"
 import { Link } from "react"
 
 export const Navbar = ()=>{
+  
   return(
     <div>
     
       <nav className="navbar">
        <div className="logo">
-        <img src={require()} alt="" />
+        <img src={""} alt="" />
        </div>
        <div className="mid">
 

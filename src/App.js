@@ -1,16 +1,17 @@
-import './App.css';
-import { Home } from "./pages/Home"
-import { Contact } from "./pages/Contact"
-import { About } from "./pages/About"
-import { Service } from "./pages/Service" 
-import { Navbar } from "./pages/Navbar"
+import './App.css'; 
+import React from 'react';
+import { Home } from "./pages/home/Home.js"
+import { Contact } from "./pages/contact/Contact.js"
+import { About } from "./pages/about/About.js"
+import { Service } from "./pages/service/Service.js" 
+import { Navbar } from './pages/navbar/Navbar.jsx';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
+    <div>
     <Router>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route to={"/"}element = {<Home />} />
         <Route to={"/Contact"}element= {<Contact />} />
