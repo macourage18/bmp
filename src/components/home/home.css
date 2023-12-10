@@ -1,0 +1,109 @@
+:root{
+  --Blue: (#017efe);
+  --mgenter: (rgba(226, 36, 70, 1));
+}
+
+a{
+  text-decoration: none;
+}
+  
+
+.sec1{
+  margin-top: 7%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.grow{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.grow h1{
+  font-size: 50px;
+  font-weight: 700;
+}
+.grow h5{
+  color: #017efe;
+}
+.A{
+  font-weight: 300;
+}
+.B{
+  color: #017efe;
+}
+.grow p{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.btn2{
+  padding: 10px 20px;
+  background-color:#017efe;
+  color: white;
+  box-shadow: 0 0 5px 5px lightgray;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+}
+.image img{
+  position: relative;
+  left: 20%;
+  width: 80%;
+  animation: float 3s ease-in-out  infinite alternate-reverse;
+}
+
+@keyframes float {
+  0%{top: 18px}
+  25%{bottom: -5px;}
+  50%{top: -15px}
+  75%{bottom: 20px;}
+  100%{top: 18px}
+}
+
+.bottom{
+  display: flex;
+  gap: 50px;
+}
+.bottom p {
+  font-weight: 350;
+  font-size: 14px;
+}
+
+.C{
+  color: #017efe;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 699px){
+  .sec1{
+    margin-top: 23%;
+  }
+  .cont{
+    flex-direction: column;
+  }
+  .image img{
+    left: 0;
+  }
+  .bottom{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
