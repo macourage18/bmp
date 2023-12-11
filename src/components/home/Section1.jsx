@@ -2,7 +2,10 @@ import Man from "../media/1 1.png"
 import "./home.css"
 import { Link } from "react-router-dom"
 
+
 export const Section1=()=>{
+
+
   return(
     <div>
     <section className="sec1">

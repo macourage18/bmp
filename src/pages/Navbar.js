@@ -13,15 +13,13 @@ export const Navbar = ()=>{
   const [menu1, setMenu1] = useState('not-active')
   const [overlay, setOverlay] = useState('not-active')
 
-  // const [open, setOpen] =useState ('')
-  // const [useToggle, setUseToggle]= useState(false)
   let border = {}
   let border1 = {}
   let border2 = {}
   
   switch(active){
     case 'home':
-      border = { borderBottom: 'solid 2px #017efe' }
+      border = { borderBottom: 'solid 2px #017efe'}
       break;
     
     case 'service':
@@ -31,6 +29,12 @@ export const Navbar = ()=>{
     case 'about':
       border2 = { borderBottom: 'solid 2px #017efe' }
       break;
+
+      case 'contact':
+        border = { borderBottom: 'solid 2px #fff' }
+        border1 = { borderBottom: 'solid 2px #fff' }
+        border2 = { borderBottom: 'solid 2px #fff' }
+        break;
 
     default:
      border ={borderBottom: 'solid 2px #017efe'}
@@ -88,7 +92,7 @@ export const Navbar = ()=>{
 
           <Link to={"/About"} onClick={()=>{setActive('about'); setNav1("close2"); setMenu('close');setOverlay('not-active')}}><p className={"pp"} style={border2} >About</p></Link>
         </div>
-          <Link to={"/Contact"} onClick={()=>{setNav1("close2"); setMenu('close');setOverlay('not-active')}}>
+          <Link to={"/Contact"} onClick={()=>{setActive('contact'); setNav1("close2"); setMenu('close');setOverlay('not-active')}}>
             <button className="btn1">
               Contact
             </button>
@@ -104,11 +108,10 @@ export const Navbar = ()=>{
        <div className="mid">
           <Link to={"/"} onClick={()=> setActive('home')}> <p className={"pp"} style={border}>Home</p></Link>
           <Link to={"/Service"} onClick={()=> setActive('service')}> <p className={"pp"} style={border1}>Service</p></Link>
-
           <Link to={"/About"} onClick={()=>setActive('about') }><p className={"pp"} style={border2} >About</p></Link>
         </div>
         <div className="btn">
-          <Link to={"/Contact"}>
+          <Link to={"/Contact"} onClick={()=> setActive('contact')}>
             <button className="btn1">
               Contact
             </button>

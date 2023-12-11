@@ -41,6 +41,7 @@
   border-bottom:solid 2px white;
 }
 
+
 .btn1{
   border: solid 2px #017efe;
   padding: 7px 25px;
@@ -120,8 +121,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 100%
   }
   .overlay.is-active{
     display: block;
