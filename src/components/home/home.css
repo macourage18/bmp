@@ -240,3 +240,126 @@ a{
     padding-top: 50px;
   }
 }
+/* =================== se2 end================= */
+/* =================== se3 start================= */
+
+.sec3{
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.cont3{
+  padding: 40px;
+  display: flex;
+}
+.who{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.who h4{
+  color: #017efe;
+}
+.image3{
+  display: flex;
+  width: 100%;
+}
+.image3 img{
+  position: relative;
+  left: 90px;
+  width: 90%;
+  z-index: -1;
+  animation: float1 3s ease-in-out  infinite alternate-reverse;
+}
+@keyframes float1 {
+  0%{left: 18px}
+  25%{right: -5px;}
+  50%{left: -15px}
+  75%{right: 20px;}
+  100%{left: 18px}
+}
+.values{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 20px;
+  width: 80%;
+}
+
+.card1{
+  background-color: #fff;
+  border: solid 3px #017efe;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.bottom2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 5px 5px 0px #eeeded;
+  background-image: linear-gradient(70deg,#eee0f7, #fefdff,#e8ddf1);
+}
+.bottom2 p{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.btn4{
+ background-color: #e22446;
+ padding: 10px 20px;
+ border-radius: 6px;
+ color: #fff;
+}
+@media screen and (max-width: 699px){
+  .cont3{
+    flex-direction: column;
+  }
+  .who p {
+    font-size: 10px;
+  }
+  .who h2{
+    font-size: 20px;
+  }
+  .card1{
+    padding: 8px 16px;
+    border: solid 2px #017efe;
+  }
+  .values{
+    padding-bottom: 20px;
+  } 
+  .image3 img{
+    width: 100%;
+  }
+  .bottom2{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bottom2 p{
+    font-size: 12px;
+  }
+  .btn4{
+    padding: 6px 12px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1050px){
+  .cont3{
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .image{
+    justify-content: center;
+    align-items: center;
+
+  }
+  .image3 img{
+    width: 70%;
+    left: 0;
+  }
+}
