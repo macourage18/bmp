@@ -1,4 +1,6 @@
 import MAN from "../media/man.png"
+import CUSTOMER from "../media/custormer.jpg"
+import SMS from "../media/sms.jpg"
 import "./conatct.css"
 import { Link } from "react-router-dom"
 import { useForm, ValidationError } from "@formspree/react"
@@ -9,14 +11,22 @@ export const Section1 =()=>{
 
   const [state, handleSubmit] = useForm("meqbkybj");
   if (state.succeeded) {
-      return <p>Message sent</p>;
+      return (
+        <div className={"messagesent"}>
+          <div className="image5">
+            <img src={SMS} alt=""/>
+          </div>
+          <p> Message Delivered</p>
+        </div>
+      )
   }
 
   return(
     <div>
       <section className={"sec4"}>
         <div className={"image4"}>
-        <img src={MAN} alt="" />
+        <img className={"man1"} src={MAN} alt="" />
+        <img className={"man2"} src={CUSTOMER} alt="" />
         </div>
         <div className={"form"}>
         <form onSubmit={handleSubmit}>
@@ -31,6 +41,7 @@ export const Section1 =()=>{
         <button type="submit" className="btn7" disabled={state.submitting} >
             Send Message
           </button>
+          
         </div>
         
         <div className="icns">
