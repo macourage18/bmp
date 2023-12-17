@@ -68,6 +68,7 @@
     padding: 10px 10%;
     background-color: white;
     width: 100%;
+    z-index: 5;
   }
   .di2{
     width: 160px;
