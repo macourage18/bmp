@@ -4,19 +4,25 @@ import SMS from "../media/sms.jpg"
 import "./conatct.css"
 import { Link } from "react-router-dom"
 import { useForm, ValidationError } from "@formspree/react"
-import { Whatsapp, Twitter, Instagram, Facebook } from "react-bootstrap-icons"
+import { Whatsapp, Twitter, Instagram, Facebook, Arrow90degLeft } from "react-bootstrap-icons"
 
 
 export const Section1 =()=>{
 
-  const [state, handleSubmit] = useForm("meqbkybj");
+  const [state, handleSubmit] = useForm("mqkrzbkv");
+  const reloadP = ()=>{
+    window.location.reload(true)
+  }
   if (state.succeeded) {
       return (
         <div className={"messagesent"}>
           <div className="image5">
+          <Link to={"/Contact"} onClick={reloadP}>
+          <Arrow90degLeft className={"back"}/>
+          </Link>
             <img src={SMS} alt=""/>
+            <p> Message Delivered!!!</p>
           </div>
-          <p> Message Delivered</p>
         </div>
       )
   }
@@ -30,19 +36,18 @@ export const Section1 =()=>{
         </div>
         <div className={"form"}>
         <form onSubmit={handleSubmit}>
-          <input type="text" name="Name" id="name" placeholder="Enter your name" />
-          <input type="email" name="email" id="email" placeholder="Enter your email" />
-          <ValidationError prefix="Email" field="email"errors={state.errors}/>
-          <textarea name="message" id="message" placeholder="Your message"/>
-          <ValidationError prefix="Message" field="message"errors={state.errors}/>
-
-        </form>
-        <div className="btns">
-        <button type="submit" className="btn7" disabled={state.submitting} >
+          <input type="text" name="Name" id="name" placeholder="Enter your name" required/>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+          <ValidationError prefix="Email" field="email" errors={state.errors}/>
+          <textarea name="message" id="message" placeholder="Your message" required/>
+          <ValidationError prefix="Message" field="message" errors={state.errors}/>
+          <div className="btns">
+          <button type="submit" className="btn7" disabled={state.submitting} >
             Send Message
           </button>
-          
         </div>
+        </form>
+      
         
         <div className="icns">
           <div className="icns1">

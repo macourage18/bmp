@@ -12,6 +12,7 @@ export const Navbar = ()=>{
   const [nav1, setNav1] = useState('')
   const [menu1, setMenu1] = useState('not-active')
   const [overlay, setOverlay] = useState('not-active')
+ 
 
   let border = {}
   let border1 = {}
@@ -24,16 +25,19 @@ export const Navbar = ()=>{
     
     case 'service':
       border1 = { borderBottom: 'solid 2px #017efe' }
+      window.location.reload(setActive('service'))
       break;
 
     case 'about':
       border2 = { borderBottom: 'solid 2px #017efe' }
+      window.location.reload(setActive('about'))
       break;
 
       case 'contact':
         border = { borderBottom: 'solid 2px #fff' }
         border1 = { borderBottom: 'solid 2px #fff' }
         border2 = { borderBottom: 'solid 2px #fff' }
+        window.location.reload(setActive('contact'))
         break;
 
     default:
@@ -89,7 +93,6 @@ export const Navbar = ()=>{
        <div>
           <Link to={"/"} onClick={()=> {setActive('home'); setNav1("close2"); setMenu('close');setOverlay('not-active')}}> <p className={"pp"} style={border}>Home</p></Link>
           <Link to={"/Service"} onClick={()=> {setActive('service'); setNav1("close2"); setMenu('close');setOverlay('not-active')}}> <p className={"pp"} style={border1}>Service</p></Link>
-
           <Link to={"/About"} onClick={()=>{setActive('about'); setNav1("close2"); setMenu('close');setOverlay('not-active')}}><p className={"pp"} style={border2} >About</p></Link>
         </div>
           <Link to={"/Contact"} onClick={()=>{setActive('contact'); setNav1("close2"); setMenu('close');setOverlay('not-active')}}>
