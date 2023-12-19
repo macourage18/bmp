@@ -222,7 +222,7 @@ a{
     flex-direction: column;
   }
   .card{
-    width: 90%;
+    width: 100%; padding: 20px;
   }
   .ourService h1{
     font-size: 30px;
@@ -320,6 +320,10 @@ a{
 @media screen and (max-width: 699px){
   .cont3{
     flex-direction: column;
+    padding: 20px 0%;
+  }
+  .who{
+    width: 100%;
   }
   .who p {
     font-size: 10px;
@@ -333,6 +337,9 @@ a{
   }
   .values{
     padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   } 
   .image3 img{
     width: 100%;
