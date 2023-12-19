@@ -3,11 +3,26 @@ import "./footer.css"
 import { Link } from "react-router-dom"
 import { Whatsapp, Facebook,Linkedin,Twitter, Apple, GooglePlay } from "react-bootstrap-icons"
 export const Footer =() =>{
+  const path = ()=>{
+    window.location.pathname("/")
+  }
+  const path2 = ()=>{
+    window.location.pathname("/Service")
+  }
+  const path3 = ()=>{
+    window.location.pathname("/About")
+  }
+  const path4 = ()=>{
+    window.location.pathname("/Contact")
+  }
+
+
+
   return(
     <div>
       <footer>
         <div className={"top"}>
-        <Link to={"/"}>
+        <Link to={"/"} onClick={path}>
           <img src={BMP} alt="" />
         </Link>
           <div className={"follow"}>
@@ -33,12 +48,12 @@ export const Footer =() =>{
           </ul>
           <ul>
           <h3>Quick Links</h3>
-            <Link to={"/Services"}><p>Our Services</p></Link>
-            <Link to={"/Contact"}><p>Contact</p></Link>
-            <Link to={"/About"}><p>About</p></Link>
+            <Link to={"/Service"} onClick={path2}><p>Our Services</p></Link>
+            <Link to={"/Contact"} onClick={path4}><p>Contact</p></Link>
+            <Link to={"/About"}onClick={path3}><p>About</p></Link>
             <Link to={"/Pricing"}> <p>Pricing Plans</p></Link>
           </ul>
-          <div className={"contact2"}>
+          <div className={"contact2"}>Service
             <div className={"customer"}>
               <h5>Customer Care</h5>
              <div>
