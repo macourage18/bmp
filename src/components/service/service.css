@@ -10,7 +10,7 @@
   left: 0; 
 }
 .top1 p{
-  color: #fff;
+  color: #220606;
   position: absolute;
   top: 50%;
   padding: 0 10%;
@@ -88,9 +88,9 @@
 }
 /* ==================== sec 6 end ================== */
 /* ================= sec 7 start ================== */
-.sec7{
+/* .sec7{
   background-size: 100%;
-}
+} */
 
 .container{
   display: flex;
@@ -102,29 +102,23 @@
 .streamline{
   display: flex;
   width: 100%;
+  gap: 20px;
 }
 .image0{
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  position: relative;
+  align-items: flex-start;
   width: 100%;
   padding: 40px;
 }
 .image0 img{
-  width: 70%;
+  width: 100%;
 }
 .streamimg{
  border-radius: 20px;
  box-shadow: -10px 10px #017efe;
- margin-top: 20px;
- margin-left: 25px;
 }
-.line1{
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+
 .stworkflow{
   display: flex;
   flex-direction: column;
@@ -134,9 +128,9 @@
 }
 .data{
   display: flex;
+  gap: 20px;
 }
 .image01{
-  position: relative;
   width: 100%;
   display: flex;
   padding: 50px;
@@ -144,17 +138,12 @@
 }
 
 .image01 img{
-  width: 70%;
+  width: 100%;
 }
 
 .dataimg{
   border-radius: 20px;
   box-shadow: 10px 10px #017efe;
-}
-.line2{
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .insights{
@@ -263,20 +252,10 @@
     flex-direction: column;
     gap: 20px;
   }
-  .line1{
-    left: 10%;
-  }
-  .line2{
-    right: 10%;
-  }
 }
 @media (min-width: 700px) and (max-width: 1050px){
   .vatimg{
     margin-left: 35px;
-  }
-  .line3{
-    top: 0;
-    left: 0;
   }
   .image02{
     height: 200px;

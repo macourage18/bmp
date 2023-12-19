@@ -1,8 +1,6 @@
 import "./service.css"
 import ONLINE from "../media/online.png"
 import VAT from "../media/value.png"
-import  LINE  from "../media/Group 651.png"
-import  LINE1 from "../media/Group 6512.png"
 import { Link } from "react-router-dom"
 
 export const Section3 = ()=>{
@@ -12,7 +10,6 @@ export const Section3 = ()=>{
       <div className={"container"}>
       <div className={"value"}>
         <div className={"image0 image02"}>
-        <img src={LINE1} alt="" className="line1 line3" />
         <img src={VAT} alt="" className={"vatimg"}/>
         </div>
           <div className={"val"}>
@@ -42,8 +39,7 @@ export const Section3 = ()=>{
             </Link>
           </div>
           <div className={"image01 image04"}>
-          <img src={LINE} alt="" className={"line2"}
-/>          <img src={ONLINE} alt="" className="onlimg"/>
+           <img src={ONLINE} alt="" className="onlimg"/>
           </div>
         </div> 
       </div>
