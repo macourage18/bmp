@@ -43,7 +43,7 @@ export const Footer =() =>{
               <h5>Customer Care</h5>
              <div>
              <Link to={""}><Whatsapp className={"icon4"} /></Link>
-              <Link to={"bmpinovations@gmail.com"}>bmpinovations@gmail.com</Link>
+              <Link to={""}>bmpinovations@gmail.com</Link>
              </div>
             </div>
             <div className={"buttns"}>
