@@ -6,6 +6,7 @@ import { MenuButtonFill,  XCircle } from "react-bootstrap-icons"
 
 
 
+
 export const Navbar = ()=>{
   const [active ,setActive]= useState('')
   const [menu, setMenu] = useState('')
@@ -14,34 +15,43 @@ export const Navbar = ()=>{
   const [overlay, setOverlay] = useState('not-active')
  
 
-  let border = {}
-  let border1 = {}
-  let border2 = {}
+  let border = {};
+  let border1 = {};
+  let border2 = {};
   
-  switch(active){
+  switch (active) {
     case 'home':
-      border = { borderBottom: 'solid 2px #017efe'}
+      border = { borderBottom: 'solid 2px #017efe' };
       break;
-    
+  
     case 'service':
-      border1 = { borderBottom: 'solid 2px #017efe' }
-      window.location.reload(setActive('service'))
+      border1 = { borderBottom: 'solid 2px #017efe' };
       break;
-
+  
     case 'about':
-      border2 = { borderBottom: 'solid 2px #017efe' }
-      window.location.reload(setActive('about'))
+      border2 = { borderBottom: 'solid 2px #017efe' };
       break;
-
-      case 'contact':
-        border = { borderBottom: 'solid 2px #fff' }
-        border1 = { borderBottom: 'solid 2px #fff' }
-        border2 = { borderBottom: 'solid 2px #fff' }
-        window.location.reload(setActive('contact'))
-        break;
-
+  
+    case 'contact':
+      border = { borderBottom: 'solid 2px #fff' };
+      border1 = { borderBottom: 'solid 2px #fff' };
+      border2 = { borderBottom: 'solid 2px #fff' };
+      break;
+  
     default:
-     border ={borderBottom: 'solid 2px #017efe'}
+      if (window.location.pathname === "/Service") {
+        border = { borderBottom: 'solid 2px #ffff' };
+        border1 = { borderBottom: 'solid 2px #017efe' };
+      } else if (window.location.pathname === "/About") {
+        border1 = { borderBottom: 'solid 2px #ffff' };
+        border2 = { borderBottom: 'solid 2px #017efe' };
+      } else if (window.location.pathname === "/Contact") {
+        border = { borderBottom: 'solid 2px #ffff' };
+        border1 = { borderBottom: 'solid 2px #fff' };
+        border2 = { borderBottom: 'solid 2px #fff' };
+      } else {
+        border = { borderBottom: 'solid 2px #017efe' };
+      }
   }
 
   let hamburger = {}

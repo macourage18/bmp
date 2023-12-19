@@ -1,6 +1,10 @@
 import ABT from "../media/1 2.png"
 import { Link } from "react-router-dom"
 export const Section3=()=>{
+  const path = ()=>{
+    window.location.pathname("/Contact")
+  }
+
   return(
     <div>
       <section className={"sec3"}>
@@ -8,7 +12,7 @@ export const Section3=()=>{
           <div className={"who"}>
             <h4>Who We Are</h4>
             <h2>We Create Track for
-            <br />Businesses to Grow.</h2>
+            <br />Businesses to GrowService.</h2>
             <p>
             We believe brand interaction is key to communication. Real innovations 
             and positive customer experience are the heart of success.
@@ -35,7 +39,7 @@ export const Section3=()=>{
         </div>
         <div className={"bottom2"}>
           <p>Grab an offer & customize your brand</p>
-          <Link to={""}>
+          <Link to={"/Contact"} onClick={path}>
           <button className={"btn4"}>
             Contact US
           </button>

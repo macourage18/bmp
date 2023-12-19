@@ -3,6 +3,9 @@ import { Link } from "react-router-dom"
 
 
 export const Section2 =()=>{
+  const path = ()=>{
+    window.location.pathname("/Service")
+  }
   return(
     <div>
       <section className={"sec2"}>
@@ -26,7 +29,7 @@ export const Section2 =()=>{
           <h3> Streamline Workflow</h3>
           <p>By emphasizing automation and efficient processes, we help businesses improve productivity and collaboration... </p>
 
-          <Link to={'/Service'}>
+          <Link to={'/Service'} onClick={path}>
           Learn More
           </Link>
 
@@ -37,7 +40,7 @@ export const Section2 =()=>{
           <p>
           Analytics and Reporting: B2B platforms can provide businesses with valuable data and analytics to help them make informed decisions. This includes data on market trends, transaction history, and supplier performance.
           </p>
-          <Link to={'/Service'}>
+          <Link to={'/Service'} onClick={path}>
           Learn More
           </Link>
 
@@ -54,7 +57,7 @@ export const Section2 =()=>{
           <p>
           Comprehensive Website: Develop a user-friendly, responsive website with clear navigation.Ensure that the platform's features and benefits are well-documented and easy to understand.Optimize the website for both desktop and mobile devices.
           </p>
-          <Link to={'/Service'}>
+          <Link to={'/Service'} onClick={path}>
           Learn More
           </Link>
 
@@ -71,7 +74,7 @@ export const Section2 =()=>{
           <p>
           Logistics and Fulfillment: we offer logistics and fulfillment services, helping businesses manage the delivery of products efficiently. This can include warehousing, shipping, and tracking services.
           </p>
-          <Link to={'/Service'}>
+          <Link to={'/Service'} onClick={path}>
           Learn More
           </Link>
 
