@@ -27,6 +27,7 @@ footer{
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  gap:20px;
   
 }
 .bottom3 ul{
@@ -51,12 +52,6 @@ footer{
   gap: 20px;
   flex: 4;
 }
-.btn5{
-  padding: 8px 16px;
-  border-radius: 5px;
-  background-color: #232d4b;
-  color: #fff;
-}
 .customer{
   display: flex;
   width: 100%;
@@ -68,10 +63,6 @@ footer{
 .customer a{
   padding-right: 10px;
   color: #fff;
-}
-.buttns{
-  display: flex;
-  gap: 10px;
 }
 .buttns2{
   display: flex;
