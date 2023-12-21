@@ -248,6 +248,9 @@ a{
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+
 }
 .cont3{
   padding: 40px;
@@ -266,6 +269,8 @@ a{
 .image3{
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .image3 img{
   position: relative;
