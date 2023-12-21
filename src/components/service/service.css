@@ -157,7 +157,12 @@
 .image01 img{
   width: 100%;
 }
-
+.image03 img{
+  width: 80%;
+}
+.image04 img{
+  width: 80%;
+}
 .dataimg{
   border-radius: 20px;
   box-shadow: 10px 10px #017efe;
