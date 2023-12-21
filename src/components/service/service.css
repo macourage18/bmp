@@ -203,6 +203,12 @@
     justify-content: center;
     align-items: center;
   }
+  .image03 img{
+    width: 100%;
+  }
+  .image04 img{
+    width: 100%;
+  }
   .dataimg{
     box-shadow: 8px 8px #017efe;
   }
