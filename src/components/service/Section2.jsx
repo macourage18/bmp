@@ -34,12 +34,11 @@ export const Section2 = () =>{
             <button className="btn2" > Get Started </button>  
             </Link>
           </div>
-          <div className={"image01"}>
+          <div className={"image01 image03"}>
         <img src={DATA} alt="" className="dataimg"/>
           </div>
         </div> 
       </div>
-       
       </section>
     </div>
   )

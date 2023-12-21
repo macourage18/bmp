@@ -220,7 +220,7 @@
     box-shadow: -8px 8px #017efe;
   }
   .data{
-    height: 250px;
+    height: 100%;
   }
 }
 /* ===============sec7 end ================= */
@@ -256,7 +256,9 @@
   border-radius: 20px;
   box-shadow: 10px 10px #017efe;
 }
-
+.container:nth-child(0){
+  padding-bottom: 0;
+}
 @media screen and (max-width:699px){
   .value{
     flex-direction:column ;
@@ -271,17 +273,17 @@
   .vatimg{
     margin-left: 35px;
   }
-  .image02{
-    height: 200px;
-    width: 100%;
+  .image03{
+    height: 100%;
   }
   .image04{
     width: 100%;
+    height: 100%;
   }
   .online{
     padding-top: 40px;
   }
   .data{
-    padding-top:40px;
+    padding-top: 10%;
   }
 }
