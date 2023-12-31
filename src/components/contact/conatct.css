@@ -141,11 +141,11 @@ form textarea{
     justify-content: center;
     width: 100%;
   }
-  .man2{
+  /* .man2{
     display: block;
     width: 90%;
     border-radius: 20px;
-  } 
+  }  */
   .form{
     padding: 10px;
     border-radius: 20px;
@@ -154,13 +154,16 @@ form textarea{
     width: 100%;
   }
   form input{
-    width: 90%;
+    width: 100%;
   }
   form textarea{
-    max-width: 90%;
+    max-width: 100%;
   }
   .btns{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .icns{
     font-size: 10px;

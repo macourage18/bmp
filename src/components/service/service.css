@@ -10,7 +10,11 @@
   left: 0; 
 }
 .top1 p{
-  position: absolute;
+  position: absolute; .man2{
+    display: block;
+    width: 90%;
+    border-radius: 20px;
+  } 
   color: #fff;
   top: 50%;
   height: 100%;
@@ -83,9 +87,7 @@
     height: 300px;
   }
   .info img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: none;
   }
 }
 
@@ -112,7 +114,6 @@
   flex-direction: column;
   gap: 20px;
   padding: 50px 10%;
-  padding-bottom: 0;
 }
 
 .streamline{
@@ -181,6 +182,7 @@
   .container{
     gap: 30px;
     padding: 20px 10%;
+    padding-bottom: 0%;
   }
   .container p{
     font-size: 12px;
@@ -280,9 +282,6 @@
   }
 }
 @media (min-width: 700px) and (max-width: 1050px){
-  .vatimg{
-    margin-left: 35px;
-  }
   .image03{
     height: 100%;
   }

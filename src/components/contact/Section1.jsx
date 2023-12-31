@@ -1,5 +1,5 @@
 import MAN from "../media/man.png"
-import CUSTOMER from "../media/custormer.jpg"
+//import CUSTOMER from "../media/custormer.jpg"
 import SMS from "../media/sms.jpg"
 import "./conatct.css"
 import { Link } from "react-router-dom"
@@ -32,7 +32,7 @@ export const Section1 =()=>{
       <section className={"sec4"}>
         <div className={"image4"}>
         <img className={"man1"} src={MAN} alt="" />
-        <img className={"man2"} src={CUSTOMER} alt="" />
+        {/* <img className={"man2"} src={CUSTOMER} alt="" /> */}
         </div>
         <div className={"form"}>
         <form onSubmit={handleSubmit}>
